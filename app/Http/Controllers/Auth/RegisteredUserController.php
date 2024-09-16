@@ -43,6 +43,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(route('cms.pages.dashboard',['user'=>$user]));
+        return redirect(route('cms.dashboard',['user'=>$user]));
     }
 }

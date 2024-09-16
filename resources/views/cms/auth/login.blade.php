@@ -39,6 +39,7 @@
 
                   <div class="form-group">
                     <input type="email" name="email" value="{{ old('email') }}" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
                   </div>
                   <div class="form-group">
                     <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
