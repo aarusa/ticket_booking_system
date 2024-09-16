@@ -32,34 +32,33 @@
                 </div>
                 <h4>Create an account</h4>
                 <!-- <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6> -->
-                <form class="pt-3">
+                <form class="pt-3" method="POST" action="{{ route('register') }}">
+                  @csrf
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username">
+                    <input type="text" class="form-control form-control-lg" name="fname" id="fname" placeholder="First Name" required>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                    <input type="text" class="form-control form-control-lg" name="mname" id="mname" placeholder="Middle Name">
                   </div>
                   <div class="form-group">
-                    <select class="form-select form-select-lg" id="exampleFormControlSelect2">
-                      <option>Country</option>
-                      <option>United States of America</option>
-                      <option>United Kingdom</option>
-                      <option>India</option>
-                      <option>Germany</option>
-                      <option>Argentina</option>
-                    </select>
+                    <input type="text" class="form-control form-control-lg" name="lname" id="lname" placeholder="Last Name" required>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password" required>
                   </div>
                   <div class="mb-4">
                     <div class="form-check">
                       <label class="form-check-label text-muted">
-                        <input type="checkbox" class="form-check-input"> I agree to all Terms & Conditions </label>
+                        <input type="checkbox" class="form-check-input" required> I agree to all Terms & Conditions </label>
                     </div>
                   </div>
                   <div class="mt-3 d-grid gap-2">
-                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="{{ url('dashboard') }}">SIGN UP</a>
+                  <button class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                      {{ __('Register') }}
+                  </button>
                   </div>
                   <div class="text-center mt-4 font-weight-light"> Already have an account? <a href="{{ url('login') }}" class="text-primary">Login</a>
                   </div>

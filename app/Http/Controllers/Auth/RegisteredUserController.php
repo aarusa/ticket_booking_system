@@ -22,35 +22,27 @@ class RegisteredUserController extends Controller
         return view('cms.auth.register');
     }
 
-    // temporary
-    public function dashboard()
-    {
-        return view('cms.pages.dashboard');
-    }
-
     /**
      * Handle an incoming registration request.
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    // public function store(Request $request): RedirectResponse
-    // {
-    //     $request->validate([
-    //         'name' => ['required', 'string', 'max:255'],
-    //         'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-    //         'password' => ['required', 'confirmed', Rules\Password::defaults()],
-    //     ]);
+    public function store(Request $request): RedirectResponse
+    {
+        $user = User::create([
+            'fname' => $request->fname,
+            'mname' => $request->mname,
+            'lname' => $request->lname,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
 
-    //     $user = User::create([
-    //         'name' => $request->name,
-    //         'email' => $request->email,
-    //         'password' => Hash::make($request->password),
-    //     ]);
+        // dd($user);
 
-    //     event(new Registered($user));
+        event(new Registered($user));
 
-    //     Auth::login($user);
+        Auth::login($user);
 
-    //     return redirect(route('dashboard', absolute: false));
-    // }
+        return redirect(route('cms.pages.dashboard',['user'=>$user]));
+    }
 }

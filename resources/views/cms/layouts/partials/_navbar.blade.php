@@ -24,16 +24,20 @@
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="nav-profile-img">
-                  <img src="{{ asset('assets/cms/images/faces/face1.jpg') }}" alt="image">
-                  <span class="availability-status online"></span>
+                  <!-- <img src="{{ asset('assets/cms/images/faces/face1.jpg') }}" alt="image"> -->
+                  <!-- <span class="availability-status online"></span> -->
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">David Greymaax</p>
+                  <p class="mb-1 text-black">Hello {{ Auth::user()->fname }}</p>
                 </div>
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                <a class="dropdown-item" href="{{ url('/login') }}">
-                  <i class="mdi mdi-logout me-2 text-primary"></i> Logout </a>
+              <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button class="dropdown-item">
+                  <i class="mdi mdi-logout me-2 text-primary"></i> Logout 
+                </button>
+              </form>
               </div>
             </li>
             <li class="nav-item d-none d-lg-block full-screen-link">
