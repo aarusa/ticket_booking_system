@@ -28,7 +28,7 @@
                             style="background-image: url(assets/images/backgrounds/cloud-1.png);"></div>
                         <!-- /.image-layer -->
                         <div class="main-slider-three__img">
-                            <img src="assets/images/resources/main-slider-three-img-1.png" alt="" class="float-bob-y">
+                            <img src="assets/frontend/images/resources/main-slider-three-img-1.png" alt="" class="float-bob-y">
                         </div>
                         <div class="container">
                             <div class="row">
@@ -51,7 +51,7 @@
                             style="background-image: url(assets/images/backgrounds/main-slider-3-1.png);"></div>
                         <!-- /.image-layer -->
                         <div class="main-slider-three__img">
-                            <img src="assets/images/resources/main-slider-three-img-1.png" alt="" class="float-bob-y">
+                            <img src="assets/frontend/images/resources/main-slider-three-img-1.png" alt="" class="float-bob-y">
                         </div>
                         <div class="container">
                             <div class="row">
@@ -80,14 +80,14 @@
         <!--Request Start-->
         <section class="request">
             <div class="request__shape-1 float-bob-x">
-                <img src="assets/images/shapes/request-shape-1.png" alt="">
+                <img src="assets/frontend/images/shapes/request-shape-1.png" alt="">
             </div>
             <div class="request__shape-2 float-bob-x">
-                <img src="assets/images/shapes/request-shape-2.png" alt="">
+                <img src="assets/frontend/images/shapes/request-shape-2.png" alt="">
             </div>
             <div class="container">
                 <div class="request__top">
-                    <form action="assets/inc/sendemail.php" class="request__form contact-form-validated"
+                    <form action="assets/frontend/inc/sendemail.php" class="request__form contact-form-validated"
                         novalidate="novalidate">
                         <ul class="list-unstyled request__input-list clearfix">
                             <li>
@@ -147,7 +147,7 @@
                             <div class="about-three__img-box wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <div class="about-three__img">
-                                    <img src="assets/images/resources/about-three-1.jpg" alt="">
+                                    <img src="assets/frontend/images/resources/about-three-1.jpg" alt="">
                                 </div>
                                 <div class="about-three__experience">
                                     <div class="about-three__curved-circle">
@@ -161,12 +161,12 @@
                                     </div>
                                     <div class="about-three__icon-box">
                                         <div class="about-three__icon">
-                                            <img src="assets/images/icon/about-three-icon.png" alt="">
+                                            <img src="assets/frontend/images/icon/about-three-icon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="about-three__shape-1 float-bob-x">
-                                    <img src="assets/images/shapes/about-three-shape-1.png" alt="">
+                                    <img src="assets/frontend/images/shapes/about-three-shape-1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -251,34 +251,34 @@
                 }}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-1.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-2.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-2.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-3.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-3.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-4.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-4.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-5.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-5.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-1.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-1.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-2.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-2.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-3.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-3.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-4.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-4.png" alt="">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-1-5.png" alt="">
+                            <img src="assets/frontend/images/brand/brand-1-5.png" alt="">
                         </div><!-- /.swiper-slide -->
                     </div>
                 </div>
@@ -301,7 +301,7 @@
                 <div class="we-fly__bg" style="background-image: url(assets/images/backgrounds/we-fly-bg.jpg);"></div>
             </div>
             <div class="container">
-                <img src="assets/images/shapes/we-fly-badge.png" alt="" class="we-fly__badge">
+                <img src="assets/frontend/images/shapes/we-fly-badge.png" alt="" class="we-fly__badge">
                 <div class="row">
                     <div class="col-xl-7 col-lg-8">
                         <div class="we-fly__left">
@@ -338,7 +338,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                         <div class="charters__single">
                             <div class="charters__img">
-                                <img src="assets/images/resources/charters-1-1.jpg" alt="">
+                                <img src="assets/frontend/images/resources/charters-1-1.jpg" alt="">
                             </div>
                             <div class="charters__content">
                                 <p class="charters__date">6 - 8 seats</p>
@@ -353,7 +353,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
                         <div class="charters__single">
                             <div class="charters__img">
-                                <img src="assets/images/resources/charters-1-2.jpg" alt="">
+                                <img src="assets/frontend/images/resources/charters-1-2.jpg" alt="">
                             </div>
                             <div class="charters__content">
                                 <p class="charters__date">4 - 6 seats</p>
@@ -368,7 +368,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
                         <div class="charters__single">
                             <div class="charters__img">
-                                <img src="assets/images/resources/charters-1-3.jpg" alt="">
+                                <img src="assets/frontend/images/resources/charters-1-3.jpg" alt="">
                             </div>
                             <div class="charters__content">
                                 <p class="charters__date">4 - 8 seats</p>
@@ -387,10 +387,10 @@
         <!--Benefits One Start-->
         <section class="benefits-one" id="benefits">
             <div class="benefits-one__shape-1 float-bob-x">
-                <img src="assets/images/shapes/benefits-one-shape-1.png" alt="">
+                <img src="assets/frontend/images/shapes/benefits-one-shape-1.png" alt="">
             </div>
             <div class="benefits-one__shape-2 float-bob-y">
-                <img src="assets/images/shapes/benefits-one-shape-2.png" alt="">
+                <img src="assets/frontend/images/shapes/benefits-one-shape-2.png" alt="">
             </div>
             <div class="container">
                 <div class="row">
@@ -549,7 +549,7 @@
         <!--destination Three Start-->
         <section class="destination-three">
             <div class="destination-three__shape-1 float-bob-y">
-                <img src="assets/images/shapes/destination-three-shape-1.png" alt="">
+                <img src="assets/frontend/images/shapes/destination-three-shape-1.png" alt="">
             </div>
             <div class="container">
                 <div class="row">
@@ -596,7 +596,7 @@
                                     <div class="destination-one__single">
                                         <div class="destination-one__img-box">
                                             <div class="destination-one__img">
-                                                <img src="assets/images/resources/destination-2-1.jpg" alt="">
+                                                <img src="assets/frontend/images/resources/destination-2-1.jpg" alt="">
                                             </div>
                                             <div class="destination-one__content">
                                                 <h3 class="destination-one__title"><a
@@ -619,7 +619,7 @@
                                     <div class="destination-one__single">
                                         <div class="destination-one__img-box">
                                             <div class="destination-one__img">
-                                                <img src="assets/images/resources/destination-1-2.jpg" alt="">
+                                                <img src="assets/frontend/images/resources/destination-1-2.jpg" alt="">
                                             </div>
                                             <div class="destination-one__content">
                                                 <h3 class="destination-one__title"><a
@@ -642,7 +642,7 @@
                                     <div class="destination-one__single">
                                         <div class="destination-one__img-box">
                                             <div class="destination-one__img">
-                                                <img src="assets/images/resources/destination-1-3.jpg" alt="">
+                                                <img src="assets/frontend/images/resources/destination-1-3.jpg" alt="">
                                             </div>
                                             <div class="destination-one__content">
                                                 <h3 class="destination-one__title"><a
@@ -675,7 +675,7 @@
                     <div class="we-do__bg" style="background-image: url(assets/images/backgrounds/we-do-bg.jpg);"></div>
                     <div class="we-do__real-time">
                         <div class="we-do__real-time-shape">
-                            <img src="assets/images/shapes/we-do-real-time-shape.png" alt="">
+                            <img src="assets/frontend/images/shapes/we-do-real-time-shape.png" alt="">
                         </div>
                         <div class="we-do__real-time-icon">
                             <span class="icon-check"></span>
@@ -687,7 +687,7 @@
                 </div>
                 <div class="we-do__right">
                     <div class="we-do__shape-1 float-bob-y">
-                        <img src="assets/images/shapes/we-do-shape-1.png" alt="">
+                        <img src="assets/frontend/images/shapes/we-do-shape-1.png" alt="">
                     </div>
                     <div class="we-do__content">
                         <div class="section-title text-left">
@@ -739,7 +739,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="assets/images/blog/news-1-1.jpg" alt="">
+                                <img src="assets/frontend/images/blog/news-1-1.jpg" alt="">
                                 <a href="news-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -769,7 +769,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="assets/images/blog/news-1-2.jpg" alt="">
+                                <img src="assets/frontend/images/blog/news-1-2.jpg" alt="">
                                 <a href="news-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -800,7 +800,7 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="assets/images/blog/news-1-3.jpg" alt="">
+                                <img src="assets/frontend/images/blog/news-1-3.jpg" alt="">
                                 <a href="news-details.html">
                                     <span class="blog-one__plus"></span>
                                 </a>

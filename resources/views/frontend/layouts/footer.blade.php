@@ -2,14 +2,14 @@
             <div class="container">
                 <div class="site-footer__inner">
                     <div class="site-footer__shape-1 zoom-fade-3">
-                        <img src="assets/images/shapes/site-footer-shape-1.png" alt="">
+                        <img src="assets/frontend/images/shapes/site-footer-shape-1.png" alt="">
                     </div>
                     <div class="site-footer__top">
                         <div class="row">
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                 <div class="footer-widget__column footer-widget__about">
                                     <div class="footer-widget__logo">
-                                        <a href="#"><img src="assets/images/resources/footer-logo.png" alt=""></a>
+                                        <a href="#"><img src="assets/frontend/images/resources/footer-logo.png" alt=""></a>
                                     </div>
                                     <div class="footer-widget__about-text-box">
                                         <p class="footer-widget__about-text">Private jet charters save your time and

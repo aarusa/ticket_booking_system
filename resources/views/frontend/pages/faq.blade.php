@@ -113,7 +113,7 @@
                             <span class="section-title__tagline">contact us</span>
                             <h2 class="section-title__title">Feel free to write</h2>
                         </div>
-                        <form action="assets/inc/sendemail.php" class="contact-one__form contact-form-validated"
+                        <form action="assets/frontend/inc/sendemail.php" class="contact-one__form contact-form-validated"
                             novalidate="novalidate">
                             <div class="row">
                                 <div class="col-xl-6">

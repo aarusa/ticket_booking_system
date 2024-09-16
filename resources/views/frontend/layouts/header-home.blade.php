@@ -36,7 +36,7 @@
             <div class="main-menu-three__wrapper-inner">
                 <div class="main-menu-three__left">
                     <div class="main-menu-three__logo">
-                        <a href="/"><img src="assets/images/resources/logo-2.png" alt=""></a>
+                        <a href="/"><img src="assets/frontend/images/resources/logo-2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="main-menu-three__main-menu-box">

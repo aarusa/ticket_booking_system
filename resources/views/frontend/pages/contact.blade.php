@@ -78,7 +78,7 @@
         <section class="contact-one">
             <div class="container">
                 <div class="contact-one__form-box">
-                    <form action="assets/inc/sendemail.php" class="contact-one__form contact-form-validated"
+                    <form action="assets/frontend/inc/sendemail.php" class="contact-one__form contact-form-validated"
                         novalidate="novalidate">
                         <div class="row">
                             <div class="col-xl-6">
