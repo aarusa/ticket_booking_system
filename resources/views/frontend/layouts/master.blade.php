@@ -8,10 +8,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/frontend/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/frontend/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/frontend/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/frontend/images/favicons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/frontend/images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/frontend/images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/frontend/images/favicons/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ asset('assets/frontend/images/favicons/site.webmanifest') }}" />
     <meta name="description" content="Online ticket booking system" />
 
     <!-- fonts -->
@@ -19,32 +19,32 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/frontend/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/jarallax/jarallax.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/odometer/odometer.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/jetly-icons/style.css">
-    <link rel="stylesheet" href="assets/frontend/vendors/tiny-slider/tiny-slider.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/reey-font/stylesheet.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/bxslider/jquery.bxslider.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/vegas/vegas.min.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/timepicker/timePicker.css" />
-    <link rel="stylesheet" href="assets/frontend/vendors/nice-select/nice-select.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/animate/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/animate/custom-animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/jarallax/jarallax.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/nouislider/nouislider.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/nouislider/nouislider.pips.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/odometer/odometer.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/swiper/swiper.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/jetly-icons/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/tiny-slider/tiny-slider.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/reey-font/stylesheet.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/owl-carousel/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/owl-carousel/owl.theme.default.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/bxslider/jquery.bxslider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/bootstrap-select/css/bootstrap-select.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/vegas/vegas.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/jquery-ui/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/timepicker/timePicker.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/vendors/nice-select/nice-select.css') }}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="assets/frontend/css/jetly.css" />
-    <link rel="stylesheet" href="assets/frontend/css/jetly-responsive.css" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/jetly.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/jetly-responsive.css') }}" />
 </head>
 
 <body class="custom-cursor">
@@ -84,7 +84,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="/" aria-label="logo image"><img src="assets/frontend/images/resources/logo-1.png" width="143"
+                <a href="/" aria-label="logo image"><img src="{{ asset('assets/frontend/images/resources/logo-1.png') }}" width="143"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
@@ -136,37 +136,37 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
 
 
-    <script src="assets/frontend/vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/frontend/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/frontend/vendors/jarallax/jarallax.min.js"></script>
-    <script src="assets/frontend/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/frontend/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/frontend/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-    <script src="assets/frontend/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/frontend/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="assets/frontend/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/frontend/vendors/odometer/odometer.min.js"></script>
-    <script src="assets/frontend/vendors/swiper/swiper.min.js"></script>
-    <script src="assets/frontend/vendors/tiny-slider/tiny-slider.min.js"></script>
-    <script src="assets/frontend/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/frontend/vendors/wow/wow.js"></script>
-    <script src="assets/frontend/vendors/isotope/isotope.js"></script>
-    <script src="assets/frontend/vendors/countdown/countdown.min.js"></script>
-    <script src="assets/frontend/vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/frontend/vendors/bxslider/jquery.bxslider.min.js"></script>
-    <script src="assets/frontend/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="assets/frontend/vendors/vegas/vegas.min.js"></script>
-    <script src="assets/frontend/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/frontend/vendors/timepicker/timePicker.js"></script>
-    <script src="assets/frontend/vendors/circleType/jquery.circleType.js"></script>
-    <script src="assets/frontend/vendors/circleType/jquery.lettering.min.js"></script>
-    <script src="assets/frontend/vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jarallax/jarallax.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/nouislider/nouislider.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/odometer/odometer.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/swiper/swiper.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/tiny-slider/tiny-slider.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/wnumb/wNumb.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/wow/wow.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/isotope/isotope.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/countdown/countdown.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/bxslider/jquery.bxslider.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/vegas/vegas.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/jquery-ui/jquery-ui.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/timepicker/timePicker.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/circleType/jquery.circleType.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/circleType/jquery.lettering.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/vendors/nice-select/jquery.nice-select.min.js') }}"></script>
 
 
 
 
     <!-- template js -->
-    <script src="assets/frontend/js/jetly.js"></script>
+    <script src="{{ asset('assets/frontend/js/jetly.js') }}"></script>
 </body>
 
 </html>

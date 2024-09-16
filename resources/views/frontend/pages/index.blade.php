@@ -25,7 +25,7 @@
 
                     <div class="swiper-slide">
                         <div class="image-layer-three"
-                            style="background-image: url(assets/images/backgrounds/cloud-1.png);"></div>
+                            style="background-image: url(assets/frontend/images/backgrounds/cloud-1.png);"></div>
                         <!-- /.image-layer -->
                         <div class="main-slider-three__img">
                             <img src="assets/frontend/images/resources/main-slider-three-img-1.png" alt="" class="float-bob-y">
@@ -48,7 +48,7 @@
 
                     <div class="swiper-slide">
                         <div class="image-layer-three float-bob-x"
-                            style="background-image: url(assets/images/backgrounds/main-slider-3-1.png);"></div>
+                            style="background-image: url(assets/frontend/images/backgrounds/main-slider-3-1.png);"></div>
                         <!-- /.image-layer -->
                         <div class="main-slider-three__img">
                             <img src="assets/frontend/images/resources/main-slider-three-img-1.png" alt="" class="float-bob-y">
@@ -298,7 +298,7 @@
         <!--We Fly Start-->
         <section class="we-fly">
             <div class="we-fly-bg-box">
-                <div class="we-fly__bg" style="background-image: url(assets/images/backgrounds/we-fly-bg.jpg);"></div>
+                <div class="we-fly__bg" style="background-image: url(assets/frontend/images/backgrounds/we-fly-bg.jpg);"></div>
             </div>
             <div class="container">
                 <img src="assets/frontend/images/shapes/we-fly-badge.png" alt="" class="we-fly__badge">
@@ -514,7 +514,7 @@
         <!--Counter Two Start-->
         <section class="counter-two">
             <div class="counter-two__shape-1"
-                style="background-image: url(assets/images/shapes/counter-two-shape-1.png);"></div>
+                style="background-image: url(assets/frontend/images/shapes/counter-two-shape-1.png);"></div>
             <div class="container">
                 <ul class="list-unstyled counter-two__list">
                     <li class="counter-two__single wow fadeInUp" data-wow-delay="100ms">
@@ -672,7 +672,7 @@
         <section class="we-do">
             <div class="we-do__wrap">
                 <div class="we-do__left">
-                    <div class="we-do__bg" style="background-image: url(assets/images/backgrounds/we-do-bg.jpg);"></div>
+                    <div class="we-do__bg" style="background-image: url(assets/frontend/images/backgrounds/we-do-bg.jpg);"></div>
                     <div class="we-do__real-time">
                         <div class="we-do__real-time-shape">
                             <img src="assets/frontend/images/shapes/we-do-real-time-shape.png" alt="">
@@ -833,7 +833,7 @@
 
         <!--Cta Start-->
         <section class="cta-one">
-            <div class="cta-one__bg-shape" style="background-image: url(assets/images/shapes/cta-one-bg-shape.png);">
+            <div class="cta-one__bg-shape" style="background-image: url(assets/frontend/images/shapes/cta-one-bg-shape.png);">
             </div>
             <div class="container">
                 <div class="cta-one__content">
