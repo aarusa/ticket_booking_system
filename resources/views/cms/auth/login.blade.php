@@ -32,20 +32,24 @@
                 </div>
                 <!-- <h4>Hello! let's get started</h4> -->
                 <h4>Sign in to continue</h4>
-                <form class="pt-3">
+                <x-auth-session-status class="mb-4" :status="session('status')" />
+
+                <form class="pt-3" method="POST" action="{{ route('login') }}">
+                  @csrf
+
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" name="email" value="{{ old('email') }}" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                   </div>
                   <div class="mt-3 d-grid gap-2">
-                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="{{ url('dashboard') }}">SIGN IN</a>
+                    <button class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">Login</button>
                   </div>
                   <div class="my-2 d-flex justify-content-between align-items-center">
                     <div class="form-check">
                       <label class="form-check-label text-muted">
-                        <input type="checkbox" class="form-check-input"> Keep me signed in </label>
+                        <input type="checkbox" class="form-check-input" name="remember"> Keep me signed in </label>
                     </div>
                     <a href="#" class="auth-link text-primary">Forgot password?</a>
                   </div>
