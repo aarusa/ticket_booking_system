@@ -19,7 +19,7 @@
               <h3 class="page-title">Airlines</h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                  <li class="breadcrumb-item"><a href="{{ url('dashboard') }}" style="text-decoration:none; color:inherit;"><b>Dashboard</b></a></li>
                   <li class="breadcrumb-item active" aria-current="page">Airlines</li>
                 </ol>
               </nav>
@@ -28,7 +28,7 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <button type="button" class="btn btn-gradient-primary btn-fw" style="float:right;">Add New Airline</button>
+                    <a type="button" href="{{ url('airlines/create') }}" class="btn btn-gradient-primary btn-fw" style="float:right;">Add New Airline</a>
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -39,24 +39,21 @@
                         </tr>
                       </thead>
                       <tbody>
+                        @foreach($airlines as $airline)
                         <tr>
-                          <td>1</td>
-                          <td>Turkish Airlines</td>
-                          <td>Turkey</i></td>
-                          <td><label class="badge badge-warning">Edit</label>&nbsp;&nbsp;<label class="badge badge-danger">Delete</label></td>
+                          <td>{{ $loop->iteration }}</td>
+                          <td>{{ $airline->name }}</td>
+                          <td>{{ $airline->country }}</i></td>
+                          <td>
+                            <a href="{{ route('airlines.edit', $airline->id) }}" type="button" class="btn btn-warning btn-sm">Edit</a>&nbsp;&nbsp;
+                            <form action="{{ route('airlines.destroy', $airline->id) }}" method="POST" style="display:inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Are you sure you want to delete this user?');">Delete</button>
+                            </form>
+                          </td>
                         </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Qatar Airlines</td>
-                          <td>Qatar</i></td>
-                          <td><label class="badge badge-warning">Edit</label>&nbsp;&nbsp;<label class="badge badge-danger">Delete</label></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Fly Emirates</td>
-                          <td>Dubai</i></td>
-                          <td><label class="badge badge-warning">Edit</label>&nbsp;&nbsp;<label class="badge badge-danger">Delete</label></td>
-                        </tr>
+                        @endforeach
                       </tbody>
                     </table>
                   </div>

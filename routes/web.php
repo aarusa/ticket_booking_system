@@ -22,6 +22,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/airlines',  [AirlinesController::class, 'index'])->name('airlines.index');
+    Route::get('/airlines/create',  [AirlinesController::class, 'create'])->name('airlines.create');
+    Route::post('/airlines/store',  [AirlinesController::class, 'store'])->name('airlines.store');
+    Route::get('/airlines/edit/{id}',  [AirlinesController::class, 'edit'])->name('airlines.edit');
+    Route::put('/airlines/update/{id}',  [AirlinesController::class, 'update'])->name('airlines.update');
+    Route::delete('/airlines/{id}',  [AirlinesController::class, 'destroy'])->name('airlines.destroy');
 
     Route::get('/flight-schedule',  [FlightScheduleController::class, 'index'])->name('schedule.index');
 

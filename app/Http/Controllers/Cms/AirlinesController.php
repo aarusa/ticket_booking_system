@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Cms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Airline;
 
 class AirlinesController extends Controller
 {
@@ -12,7 +13,9 @@ class AirlinesController extends Controller
      */
     public function index()
     {
-        return view('cms.module.airlines.index');
+        $airlines = Airline::all();
+
+        return view('cms.module.airlines.index', compact('airlines'));
     }
 
     /**
@@ -20,7 +23,22 @@ class AirlinesController extends Controller
      */
     public function create()
     {
-        //
+        $countries = [
+            'Australia' => 'Australia',
+            'Canada' => 'Canada',
+            'China' => 'China',
+            'Dubai' => 'Dubai',
+            'India' => 'India',
+            'Japan' => 'Japan',
+            'Nepal' => 'Nepal',
+            'New Zealand' => 'New Zealand',
+            'Qatar' => 'Qatar',
+            'Turkey' => 'Turkey',
+            'United Kingdom' => 'United Kingdom',
+            'USA' => 'USA'          
+        ];
+
+        return view('cms.module.airlines.create', compact('countries'));
     }
 
     /**
@@ -28,7 +46,14 @@ class AirlinesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $airline = Airline::create([
+            'name' => $request->name,
+            'country' => $request->country
+        ]);
+
+        $airlineId = $airline->id;
+
+        return redirect()->route('airlines.index')->with('success', 'Airline registered successfully.');
     }
 
     /**
@@ -44,7 +69,24 @@ class AirlinesController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $airline =  Airline::findOrFail($id);
+
+        $countries = [
+            'Australia' => 'Australia',
+            'Canada' => 'Canada',
+            'China' => 'China',
+            'Dubai' => 'Dubai',
+            'India' => 'India',
+            'Japan' => 'Japan',
+            'Nepal' => 'Nepal',
+            'New Zealand' => 'New Zealand',
+            'Qatar' => 'Qatar',
+            'Turkey' => 'Turkey',
+            'United Kingdom' => 'United Kingdom',
+            'USA' => 'USA'          
+        ];
+        
+        return view('cms.module.airlines.edit', compact('airline', 'countries'));
     }
 
     /**
@@ -52,7 +94,12 @@ class AirlinesController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $airline = Airline::findOrFail($id);
+        $airline->name = $request->name;
+        $airline->country = $request->country;
+        $airline->save();
+
+        return redirect()->route('airlines.index');
     }
 
     /**
@@ -60,6 +107,9 @@ class AirlinesController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $airline = Airline::findOrFail($id);
+        $airline->delete();
+
+        return redirect()->route('airlines.index');
     }
 }
