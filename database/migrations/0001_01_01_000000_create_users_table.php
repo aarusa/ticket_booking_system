@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('zip')->nullable();
             $table->string('gender')->nullable();
             $table->string('dob')->nullable();
+            $table->string('type')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

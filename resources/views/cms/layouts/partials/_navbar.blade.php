@@ -28,7 +28,7 @@
                   <!-- <span class="availability-status online"></span> -->
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Hello {{ Auth::user()->fname }}</p>
+                  <p class="mb-1 text-black" style="font-weight: 600;">Hello {{ Auth::user()->fname }}</p>
                 </div>
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">

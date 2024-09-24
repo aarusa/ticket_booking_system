@@ -16,11 +16,11 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Add New Schedule</h3>
+              <h3 class="page-title">Edit Schedule</h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="{{ url('schedule') }}" style="text-decoration:none; color:inherit;"><b>Flight Schedule</b></a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Add New Schedule</li>
+                  <li class="breadcrumb-item active" aria-current="page">Edit Schedule</li>
                 </ol>
               </nav>
             </div>
@@ -34,23 +34,25 @@
                         <label for="flight_number">Flight Number</label>
                         <input type="text" class="form-control" id="flight_number" placeholder="Flight Number" name="flight_number" required>
                       </div>
-                      
+                      <div class="form-group">
+                        <label for="airlineName">Airlines</label>
+                        <select class="form-select" id="airlineName" name="airline_name" required>
+                          <option>Qantas Airlines</option>
+                          <option>Fly Emirates</option>
+                        </select>
+                      </div>
                       <div class="form-group">
                         <label for="origin_airport">Origin Airport</label>
                         <select class="form-select" id="origin_airport" name="origin_airport" required>
-                          <option value="">Select origin airport</option>
-                          @foreach($airlines as $airline)
-                            <option value="{{ $airline['name'] }}" {{ old('origin_airport') == $airline['name'] ? 'selected' : '' }}>{{ $airline['name'] }}</option>
-                          @endforeach
+                          <option>Australia</option>
+                          <option>Dubai</option>
                         </select>
                       </div>
                       <div class="form-group">
                         <label for="destination_airport">Destination Airport</label>
                         <select class="form-select" id="destination_airport" name="destination_airport" required>
-                          <option value="">Select destination airport</option>
-                          @foreach($airlines as $airline)
-                            <option value="{{ $airline['name'] }}" {{ old('destination_airport') == $airline['name'] ? 'selected' : '' }}>{{ $airline['name'] }}</option>
-                          @endforeach
+                          <option>Australia</option>
+                          <option>Dubai</option>
                         </select>
                       </div>
                       <div class="form-group">

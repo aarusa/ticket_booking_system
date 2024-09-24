@@ -87,50 +87,34 @@
             </div>
             <div class="container">
                 <div class="request__top">
-                    <form action="assets/frontend/inc/sendemail.php" class="request__form contact-form-validated"
-                        novalidate="novalidate">
-                        <ul class="list-unstyled request__input-list clearfix">
-                            <li>
-                                <div class="request__input-box">
-                                    <input type="text" placeholder="Fly from">
+                    <form method="POST" action="{{ route('search-flights') }}" class="get-flight__form">
+                        @csrf
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="select-box">
+                                    <select class="wide" name="origin_airport" required>
+                                        <option data-display="Enter an origin">Enter an origin</option>
+                                        @foreach($airlines as $airline)
+                                            <option value="{{ $airline['name'] }}" {{ old('origin_airport') == $airline['name'] ? 'selected' : '' }}>{{ $airline['name'] }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="request__input-box">
-                                    <input type="text" placeholder="Fly to">
+                            </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="select-box">
+                                    <select class="wide" name="destination_airport" required>
+                                        <option data-display="Enter a destination">Enter a destination</option>
+                                        @foreach($airlines as $airline)
+                                            <option value="{{ $airline['name'] }}" {{ old('destination_airport') == $airline['name'] ? 'selected' : '' }}>{{ $airline['name'] }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="request__input-box">
-                                    <input type="text" name="date" placeholder="Select date" id="datepicker">
-                                    <div class="get-flight__icon-box">
-                                        <i class="far fa-calendar-alt"></i>
-                                    </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="get-flight__form-input-box">
+                                    <button type="submit" class="thm-btn get-flight__btn">Search Flights</button>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="request__input-box">
-                                    <input type="text" name="time" placeholder="Select time">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="request__input-box">
-                                    <div class="select-box">
-                                        <select class="wide">
-                                            <option data-display="Passengers">Passengers</option>
-                                            <option value="1">Passengers 01</option>
-                                            <option value="2">Passengers 02</option>
-                                            <option value="3">Passengers 03</option>
-                                            <option value="4">Passengers 04</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="request__bottom">
-                            <p class="request__bottom-text"> <span>*</span> After sending request. We’ll contact you for
-                                more details about charter.</p>
-                            <button type="submit" class="thm-btn request__btn">Book Now</button>
+                            </div>
                         </div>
                     </form>
                 </div>

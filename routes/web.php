@@ -6,15 +6,24 @@ use App\Http\Controllers\Cms\FlightScheduleController;
 use App\Http\Controllers\Cms\CustomersController;
 use App\Http\Controllers\Cms\TicketController;
 use App\Http\Controllers\Cms\AdminUsersController;
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\FlightController;
+use App\Http\Controllers\Cms\BookingController;
+use App\Models\UserController;
+use App\Http\Controllers\Cms\DashboardController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('frontend.pages.index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
-Route::get('/dashboard', function () {
-    return view('cms.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::post('/search-flights', [FlightController::class, 'searchFlight'])->name('search-flights');
+
+Route::get('/flight-details/{id}', [FlightController::class, 'flightDetails'])->name('flight-details');
+
+Route::get('/checkout/{id}', [FlightController::class, 'checkout'])->name('checkout');
+
+Route::post('/confirm-booking', [FlightController::class, 'bookingConfirm'])->name('confirm-booking');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('cms.dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -28,13 +37,17 @@ Route::middleware('auth')->group(function () {
     Route::put('/airlines/update/{id}',  [AirlinesController::class, 'update'])->name('airlines.update');
     Route::delete('/airlines/{id}',  [AirlinesController::class, 'destroy'])->name('airlines.destroy');
 
-    Route::get('/flight-schedule',  [FlightScheduleController::class, 'index'])->name('schedule.index');
+    Route::get('/schedule',  [FlightScheduleController::class, 'index'])->name('schedule.index');
+    Route::get('/schedule/create',  [FlightScheduleController::class, 'create'])->name('schedule.create');
+    Route::post('/schedule/store',  [FlightScheduleController::class, 'store'])->name('schedule.store');
+    Route::get('/schedule/edit/{id}',  [FlightScheduleController::class, 'edit'])->name('schedule.edit');
+    Route::put('/schedule/update/{id}',  [FlightScheduleController::class, 'update'])->name('schedule.update');
+    Route::delete('/schedule/{id}',  [FlightScheduleController::class, 'destroy'])->name('schedule.destroy');
 
-    Route::get('/customers',  [CustomersController::class, 'index'])->name('customers.index');
+    Route::get('/bookings',  [BookingController::class, 'index'])->name('bookings.index');
 
-    Route::get('/ticket',  [TicketController::class, 'index'])->name('ticket.index');
-
-    Route::get('/admin-users',  [AdminUsersController::class, 'index'])->name('admin.index');
+    Route::get('/users',  [AdminUsersController::class, 'index'])->name('admin.index');
+    
 });
 
 require __DIR__.'/auth.php';

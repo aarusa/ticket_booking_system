@@ -4,18 +4,19 @@ namespace App\Http\Controllers\Cms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\Booking;
 
-class AdminUsersController extends Controller
+class BookingController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $users = User::where('type','admin')->get();
-
-        return view('cms.module.users.index', compact('users'));
+        $bookings = Booking::with(['user', 'flightSchedule'])
+                    ->get();
+                    
+        return view('cms.module.booking.index', compact('bookings'));
     }
 
     /**

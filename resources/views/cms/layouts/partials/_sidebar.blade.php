@@ -8,32 +8,26 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/airlines') }}" target="_self">
-                <span class="menu-title">Airlines</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                <span class="menu-title">Airports</span>
+                <i class="mdi mdi-airplane menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/flight-schedule') }}" target="_self">
+              <a class="nav-link" href="{{ url('/schedule') }}" target="_self">
                 <span class="menu-title">Flight Schedule</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
+                <i class="mdi mdi-airplane-clock menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/customers') }}" target="_self">
-                <span class="menu-title">Customers</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
+              <a class="nav-link" href="{{ url('/bookings') }}" target="_self">
+                <span class="menu-title">Bookings</span>
+                <i class="mdi mdi-calendar-month menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/ticket') }}" target="_self">
-                <span class="menu-title">Ticket</span>
-                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url('/admin-users') }}" target="_self">
-                <span class="menu-title">Admin Users</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
+              <a class="nav-link" href="{{ url('/users') }}" target="_self">
+                <span class="menu-title">Users</span>
+                <i class="mdi mdi-account-multiple menu-icon"></i>
               </a>
             </li>
           </ul>

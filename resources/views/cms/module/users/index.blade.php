@@ -16,11 +16,11 @@
         <div class="main-panel">
         <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Flight Schedule</h3>
+              <h3 class="page-title">Users</h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="{{ url('dashboard') }}" style="text-decoration:none; color:inherit;"><b>Dashboard</b></a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Flight Schedule</li>
+                  <li class="breadcrumb-item active" aria-current="page">Users</li>
                 </ol>
               </nav>
             </div>
@@ -28,36 +28,25 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <a type="button" href="{{ url('schedule/create') }}" class="btn btn-gradient-primary btn-fw" style="float:right;">Add New Schedule</a>
+                    {{-- <a type="button" href="{{ url('airlines/create') }}" class="btn btn-gradient-primary btn-fw" style="float:right;">Add New Airline</a> --}}
                     <table class="table table-hover">
                       <thead>
                         <tr>
                           <th>SN</th>
-                          <th>Flight Number</th>
-                          <th>Origin Airport</th>
-                          <th>Destination Airport</th>
-                          <th>Date</th>
-                          <th>Time</th>
-                          <th>Actions</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Email</th>
+                          <th>Created At</th>
                         </tr>
                       </thead>
                       <tbody>
-                        @foreach($schedules as $schedule)
+                        @foreach($users as $user)
                         <tr>
                           <td>{{ $loop->iteration }}</td>
-                          <td>{{ $schedule->flight_number }}</td>
-                          <td>{{ $schedule->origin_airport }}</td>
-                          <td>{{ $schedule->destination_airport }}</td>
-                          <td>{{ $schedule->date }}</td>
-                          <td>{{ $schedule->time }}</td>
-                          <td>
-                            <a href="{{ route('schedule.edit', $schedule->id) }}" type="button" class="btn btn-warning btn-sm">Edit</a>&nbsp;&nbsp;
-                            <form action="{{ route('schedule.destroy', $schedule->id) }}" method="POST" style="display:inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Are you sure you want to delete this schedule?');">Delete</button>
-                            </form>
-                          </td>
+                          <td>{{ $user->fname }}</td>
+                          <td>{{ $user->lname }}</td>
+                          <td>{{ $user->email }}</td>
+                          <td>{{ $user->created_at }}</td>
                         </tr>
                         @endforeach
                       </tbody>
